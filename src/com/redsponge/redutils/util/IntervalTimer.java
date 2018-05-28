@@ -1,7 +1,6 @@
-package com.redsponge.redutils;
+package com.redsponge.redutils.util;
 
 import com.redsponge.redutils.console.ConsoleMSG;
-import com.redsponge.redutils.util.ThreadPool;
 
 public class IntervalTimer implements Runnable {
 
@@ -56,5 +55,9 @@ public class IntervalTimer implements Runnable {
                 timer = 0;
             }
         }
+    }
+
+    public void stop() {
+        running = false;
     }
 }

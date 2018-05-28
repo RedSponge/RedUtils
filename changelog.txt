@@ -1,3 +1,8 @@
+28/5/2018 1.8:
+ - Added a resize, hide, show, and focus listening support
+ - Added input support
+ - All textures will now be fetched from res
+
 2/4/2018 1.7:
  - Added JOrbis to dependencies
  - Added OggClip class, from the easyogg library

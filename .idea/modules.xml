@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../GraphGraphics/GraphGraphics.iml" filepath="$PROJECT_DIR$/../GraphGraphics/GraphGraphics.iml" />
       <module fileurl="file://$PROJECT_DIR$/RedUtilsRemastered.iml" filepath="$PROJECT_DIR$/RedUtilsRemastered.iml" />
       <module fileurl="file://$PROJECT_DIR$/../RedUtilsRemasteredTester/RedUtilsRemasteredTester.iml" filepath="$PROJECT_DIR$/../RedUtilsRemasteredTester/RedUtilsRemasteredTester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TicTacToe2/TicTacToe2.iml" filepath="$PROJECT_DIR$/../TicTacToe2/TicTacToe2.iml" />
     </modules>
   </component>
 </project>

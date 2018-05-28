@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Fractal Thing">
+    <output-path>$PROJECT_DIR$/out/artifacts/Fractal_Thing</output-path>
+    <root id="archive" name="Fractal Thing.jar">
+      <element id="module-output" name="RedUtilsRemasteredTester" />
+      <element id="module-output" name="RedUtilsRemastered" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../GraphGraphics/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
