@@ -1,3 +1,10 @@
+12/6/2018 1.9:
+ - Added like 16 new render methods to Texture class
+ - Constructor for Texture class now requires a BufferedImage (instead of a path)
+ - Constructor for Texture class is now private
+ - Added Texture.load(String path), use it instead of the constructor to get Texture instances
+ - new render methods support resizing by pixels and percent, rotating and centering images
+
 28/5/2018 1.8:
  - Added a resize, hide, show, and focus listening support
  - Added input support
