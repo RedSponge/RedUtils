@@ -1,11 +1,15 @@
 package com.redsponge.redutils;
 
 import com.redsponge.redutils.display.GraphicsDisplay;
+import com.redsponge.redutils.exceptions.NotEnoughThreadsPresentException;
 import com.redsponge.redutils.input.InputManager;
+import com.redsponge.redutils.annotation.Instance;
 import com.redsponge.redutils.util.IntervalTimer;
 import com.redsponge.redutils.util.ThreadPool;
+import com.redsponge.redutils.version.VersionTracker;
 
 import java.awt.Graphics2D;
+import java.lang.reflect.Field;
 
 public abstract class GraphicsApp {
 
@@ -29,25 +33,25 @@ public abstract class GraphicsApp {
     
     private boolean running;
     public static final int minThreads = 2;
-    public static final int defThreads = 4;
+    public static final int defThreads = Runtime.getRuntime().availableProcessors();
     /**
      * @param title The title of the frame
      * @param width The width of the frame
      * @param height The height of the frame
      * @param tps Ticks Per Second
-     * @param rps Renders Per Second
+     * @param fps Frames Per Second
      * @param printTicksPerSecond if true the ticks per second would be printed to the console
      * @param printRendersPerSecond if true the renders per second would be printed to the console
      * @param numThreads number of threads to run on, defaults to defThreads if not present (on shortened constructor)
      * @throws NotEnoughThreadsPresentException When numThreads is less than minThreads
      */
-    public GraphicsApp(String title, int width, int height, int tps, int rps, boolean printTicksPerSecond, boolean printRendersPerSecond, int numThreads) {
+    public GraphicsApp(String title, int width, int height, int tps, int fps, boolean printTicksPerSecond, boolean printRendersPerSecond, int numThreads) {
         display = new GraphicsDisplay(this, title, width, height);
         this.title = title;
         this.width = width;
         this.height = height;
         this.tps = tps;
-        this.rps = rps;
+        this.rps = fps;
         if(numThreads < minThreads) {
         	throw new NotEnoughThreadsPresentException(numThreads);
         }
@@ -55,6 +59,7 @@ public abstract class GraphicsApp {
 
         this.printTicksPerSecond = printTicksPerSecond;
         this.printRendersPerSecond = printRendersPerSecond;
+        defineInstances();
     }
 
     public GraphicsApp(String title, int width, int height, int tps, int rps) {
@@ -71,6 +76,7 @@ public abstract class GraphicsApp {
     	running = true;
     	this.display.initiateFrame();
         this.inputManager = new InputManager(display, true);
+        if(checkVersion()) VersionTracker.checkVersion(threadPool);
     	preInit();
         init();
         this.ticksTimer = new IntervalTimer(this::fullTick, threadPool, tps, printTicksPerSecond, "Ticking");
@@ -154,6 +160,8 @@ public abstract class GraphicsApp {
      * <strong>Called after IntervalTimers for ticking and rendering are created</strong>
      */
     public void postInit() {}
+
+    public boolean checkVersion() {return true;}
     
     private void fullTick() {
     	preTick();
@@ -166,12 +174,21 @@ public abstract class GraphicsApp {
     public GraphicsDisplay getDisplay() {
         return display;
     }
+
+    public InputManager getInputManager() {
+        return inputManager;
+    }
+
+    public void defineInstances() {
+        for(Field f : this.getClass().getDeclaredFields()) {
+            if(f.isAnnotationPresent(Instance.class)) {
+                try {
+                    f.set(this, this);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }
 
-class NotEnoughThreadsPresentException extends RuntimeException {
-	
-	public NotEnoughThreadsPresentException(int numThreads) {
-		super("Not enough threads (" + numThreads + ") are present! you should have at least " + GraphicsApp.minThreads);
-	}
-	
-}
