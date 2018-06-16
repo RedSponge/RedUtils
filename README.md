@@ -31,7 +31,7 @@ A more complicated version of the constructor contains also `boolean printTPS, b
 
 In the end, you should have a class that looks like this:
 ```
-public class Example extends GraphicsApp {
+public class ExampleApp extends GraphicsApp {
   public Example() {
     super("An example app", 640, 480, 60, 60)  
     start()
@@ -51,4 +51,66 @@ public class Example extends GraphicsApp {
   public void render() {
   
   }
+}
 ```
+
+In your main method, just create a new instance of the main class.
+
+### Main Class Instances (Version 1.10 and up)
+
+To create an instance of the class all you need to do is add a public static field of your class with the `@Instance` annotation above it.
+```
+@Instance
+public static ExampleApp INSTANCE;
+```
+Its value will be injected using reflection during the initiation sequence.
+
+### Mouse And Keyboard Input (Version 1.08 and up)
+
+Every `GraphicsApp` instance has a protected `InputManager` field that is registered to its frame, the input manager has the following methods:
+
+*  registerToDisplay(GraphicsDisplay display) - Adds the mouse and key listeners to the display, automatically done by GraphicsApp
+  
+*  isKeyHeld(int key) - returns true as long as the key is pressed\held
+*  isKeyJustPressed(int key) - returns true for the first tick the key is held
+*  isKeyReleased(int key) - returns true as long as the key is not pressed\held
+*  isKeyJustReleased(int key) - returns true for the first tick after the key has been released
+  
+*  isMouseButtonHeld(int button) - returns true as long as the button is pressed\held
+*  isMouseButtonJustPressed(int button) - returns true for the first tick the button is held
+*  isMouseButtonReleased(int button) - returns true as long as the button is not pressed\held
+*  isMouseButtonJustReleased(int button) returns true for the first tick after the button has been released
+  
+*  getMouseX() - returns current mouse X position
+*  getMouseY() - returns current mouse Y position
+
+To get the inputManager outside of the main class, use the `GraphicsApp.getInputManager()` on an instance of your class
+
+### Rendering and the Graphics2D Object
+To render, use the `Graphics2D g` field which is a protected field in the `GraphicsApp` class, and can be used freely:
+```
+@Override
+public void render() {
+  g.drawRect(100, 100, 200, 200);
+  g.fill(aRectangleIDeclaredEarlier);
+}
+```
+
+### Textures
+
+###### Internal (Version 1.09 and up)
+Using the `Texture.load(String path)` method you can load internal textures (from a res folder for example). if you're using png, you can type the name without the ".png" extension, otherwise, add the extension in the path.
+
+###### External
+Not implemented yet.
+
+###### Rendering
+To render a texture, use the `Texture.render(...)` method, there are many variations of it so choose what suits you. all of them request the `Graphics2D g` object and the x and y coordinates.
+
+### Audio
+To get audio objects, use the  `AudioManager` class.
+
+###### Ogg (Version 1.07 and up)
+Using the `AudioManager.OGG.getClip(String path)` you can retrieve an OggClip instance.
+
+an `OggClip` has some methods such as `play`, `loop`, `stop` and `setGain`.
