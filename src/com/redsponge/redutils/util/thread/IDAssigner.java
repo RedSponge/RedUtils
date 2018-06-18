@@ -1,4 +1,4 @@
-package com.redsponge.redutils.util;
+package com.redsponge.redutils.util.thread;
 
 public class IDAssigner {
 

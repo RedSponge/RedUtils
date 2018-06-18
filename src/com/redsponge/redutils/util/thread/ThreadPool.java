@@ -1,4 +1,4 @@
-package com.redsponge.redutils.util;
+package com.redsponge.redutils.util.thread;
 
 import java.util.LinkedList;
 import java.util.List;

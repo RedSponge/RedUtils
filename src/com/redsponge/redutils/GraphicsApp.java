@@ -1,11 +1,15 @@
 package com.redsponge.redutils;
 
 import com.redsponge.redutils.display.GraphicsDisplay;
+import com.redsponge.redutils.exceptions.NotEnoughThreadsPresentException;
 import com.redsponge.redutils.input.InputManager;
-import com.redsponge.redutils.util.IntervalTimer;
-import com.redsponge.redutils.util.ThreadPool;
+import com.redsponge.redutils.util.array.ITickable;
+import com.redsponge.redutils.util.thread.IntervalTimer;
+import com.redsponge.redutils.util.thread.ThreadPool;
 
 import java.awt.Graphics2D;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class GraphicsApp {
 
@@ -14,6 +18,9 @@ public abstract class GraphicsApp {
 
     protected String title;
     protected int width, height;
+
+    protected List<ITickable> tickables;
+
     private int tps, rps;
 
     protected ThreadPool threadPool;
@@ -55,10 +62,17 @@ public abstract class GraphicsApp {
 
         this.printTicksPerSecond = printTicksPerSecond;
         this.printRendersPerSecond = printRendersPerSecond;
+
+        this.tickables = new ArrayList<>();
     }
 
     public GraphicsApp(String title, int width, int height, int tps, int rps) {
         this(title, width, height, tps, rps, false, false, defThreads);
+    }
+
+    public GraphicsApp() {
+        this("New Instance Of GraphicsApp", 500, 500, 1, 1);
+        start();
     }
 
     /**
@@ -156,11 +170,15 @@ public abstract class GraphicsApp {
     public void postInit() {}
     
     private void fullTick() {
-    	preTick();
+        preTick();
+        tickables.addAll(ITickable.pending);
+        ITickable.pending.clear();
+        tickables.forEach(ITickable::preTick);
         tick();
         postTick();
         inputManager.tickKeys();
         inputManager.tickMouse();
+        tickables.forEach(ITickable::postTick);
     }
 
     public GraphicsDisplay getDisplay() {
@@ -168,10 +186,3 @@ public abstract class GraphicsApp {
     }
 }
 
-class NotEnoughThreadsPresentException extends RuntimeException {
-	
-	public NotEnoughThreadsPresentException(int numThreads) {
-		super("Not enough threads (" + numThreads + ") are present! you should have at least " + GraphicsApp.minThreads);
-	}
-	
-}

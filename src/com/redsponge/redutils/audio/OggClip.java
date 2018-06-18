@@ -1,16 +1,5 @@
 package com.redsponge.redutils.audio;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.FloatControl;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.SourceDataLine;
-
 import com.jcraft.jogg.Packet;
 import com.jcraft.jogg.Page;
 import com.jcraft.jogg.StreamState;
@@ -20,6 +9,16 @@ import com.jcraft.jorbis.Comment;
 import com.jcraft.jorbis.DspState;
 import com.jcraft.jorbis.Info;
 
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.DataLine;
+import javax.sound.sampled.FloatControl;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.SourceDataLine;
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
 /**
  * Simple Clip like player for OGG's. Code is mostly taken from the example provided with
  * JOrbis.
@@ -27,8 +26,9 @@ import com.jcraft.jorbis.Info;
  * @author kevin
  *
  * Wasn't written by me (RedSponge)
+ * Edited slightly by RedSponge
  */
-public class OggClip {
+public class OggClip implements IAudioClip{
     private final int BUFSIZE = 4096 * 2;
     private int convsize = BUFSIZE * 2;
     private byte[] convbuffer = new byte[convsize];
@@ -59,7 +59,7 @@ public class OggClip {
      * @param ref The reference into the class path which the ogg can be read from
      * @throws IOException Indicated a failure to find the resource
      */
-    public OggClip(String ref) throws IOException {
+    OggClip(String ref) throws IOException {
         try {
             init(Thread.currentThread().getContextClassLoader().getResourceAsStream(ref));
         } catch (IOException e) {
@@ -73,7 +73,7 @@ public class OggClip {
      * @param in The stream from which the ogg can be read from
      * @throws IOException Indicated a failure to read from the stream
      */
-    public OggClip(InputStream in) throws IOException {
+    OggClip(InputStream in) throws IOException {
         init(in);
     }
 
