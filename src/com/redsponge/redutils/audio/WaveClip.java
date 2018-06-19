@@ -28,6 +28,7 @@ public class WaveClip implements IAudioClip{
   @Override
   public void play() {
       clip.setFramePosition(0);
+      paused = false;
       clip.start();
   }
 
@@ -71,6 +72,7 @@ public class WaveClip implements IAudioClip{
   @Override
   public void pause() {
     clip.stop();
+    paused = true;
   }
 
   @Override

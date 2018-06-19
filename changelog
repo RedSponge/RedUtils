@@ -1,0 +1,55 @@
+19/6/2018 1.11:
+ - Added .wav support! (check README.md for how to use)
+ - Moved builds from out to builds
+
+13/6/2018 1.10:
+ - Added math.Position
+ - Added io.FileHandler
+ - Added FileHandler.readFile(String path) for reading internal files
+ - Added VersionTracker, and called VersionTracker.checkVersion() in GraphicsApp.start()
+ - VersionTracker fetches version stored on cloud and compares to current to check if latest built is being run
+ - Added GraphicsApp.getInputManager()
+ - Added boolean GraphicsApp.checkVersion(). defaults to true. determines whether a VersionTracker.checkVersion will be called
+ - Added @Instance annotation. put above static main class instances, the value will be automatically put in through reflection
+
+
+12/6/2018 1.09:
+ - Added like 16 new render methods to Texture class
+ - Constructor for Texture class now requires a BufferedImage (instead of a path)
+ - Constructor for Texture class is now private
+ - Added Texture.load(String path), use it instead of the constructor to get Texture instances
+ - new render methods support resizing by pixels and percent, rotating and centering images
+
+28/5/2018 1.08:
+ - Added a resize, hide, show, and focus listening support
+ - Added input support
+ - All textures will now be fetched from res
+
+2/4/2018 1.07:
+ - Added JOrbis to dependencies
+ - Added OggClip class, from the EasyOgg library
+ - Added AudioManager and AudioManager.Ogg
+ - Added AudioManager.Ogg.getClip(String path)
+
+3/31/2018 1.0675:
+ - The ThreadPool threads is now protected (instead of private)
+
+3/31/2018 1.065:
+ - Added NotEnoughThreadsPersentException for when not enough threads are present in GraphicsApp constructor
+ - Added @param annotations for printTicksPerSecond, printRendersPerSecond and numThreads
+ - Added defThreads and minThreads, defThreads is used as default threads when using shortened GraphicsApp constructor. when numThreads is less than minThreads a NotEnoughThreadPresentException would be thrown. 
+
+3/31/2018 - 1.06:
+ - Everything is now Multi-threaded properly
+ - Every GraphicsApp instance has its own ThreadPool
+ - IntervalTimers now ask for a ThreadPool in their constructor and schedule themselves in it
+
+3/23/2018 - 1.04:
+ - IntervalTimer threads now have ids
+ - added preTick, postTick, preInit, postInit, preRender and postRender
+
+3/23/2018 - 1.03:
+ - Optimized buffer strategy and stuff
+
+3/11/2018 - 1.02:
+ - Changed timers (java.util.Timer) to IntervalTimers for more precision

@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="RedUtilsRemastered-1.08v_java8">
-    <output-path>$PROJECT_DIR$/out/1.08</output-path>
-    <root id="archive" name="RedUtilsRemastered-1.08v_java8.jar">
-      <element id="module-output" name="RedUtilsRemastered" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jorbis-0.0.17.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
