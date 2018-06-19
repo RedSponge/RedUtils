@@ -107,10 +107,11 @@ Not implemented yet.
 ###### Rendering
 To render a texture, use the `Texture.render(...)` method, there are many variations of it so choose what suits you. all of them request the `Graphics2D g` object and the x and y coordinates.
 
-### Audio
-To get audio objects, use the  `AudioManager` class.
+### Audio (Version 1.11 and up)
+To get audio objects, use the  `AudioManager` class to retrieve `IAudioClip` instances.
 
-###### Ogg (Version 1.07 and up)
-Using the `AudioManager.OGG.getClip(String path)` you can retrieve an OggClip instance.
+`IAudioClip` instances have methods such as `play()`, `stop()`, `pause()` and 'loop()'.
 
-an `OggClip` has some methods such as `play`, `loop`, `stop` and `setGain`.
+### Supported Formats:
+* Ogg - `AudioManager.Ogg.getClip(String path)` (Since: **1.7**)
+* Wave - `AudioManager.Wave.getClip(String path)` (Since: **1.11**)
