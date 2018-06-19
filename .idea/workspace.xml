@@ -2,72 +2,13 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Fractal Thing" />
+      <artifact name="RedUtilsRemastered_1.11_java8" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="701a91fc-3dc3-468b-9f79-51a0d3733392" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/redsponge/redutils/annotation/Instance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/redsponge/redutils/io/FileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/redsponge/redutils/math/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/redsponge/redutils/version/VersionTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Fractal_Thing.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RedUtilsRemastered_1_08v_java8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/eran.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jorbis_0_0_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RedUtilsRemastered_1_11_java8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RedUtilsRemastered.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RedUtilsRemastered.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/changelog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.0/RedUtilsRemastered-1.0v.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.01/RedUtilsRemastered-1.01v.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.02/RedUtilsRemastered-1.02v.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.03/RedUtilsRemastered_v1.03.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.04/RedUtilsRemastered_v1.04.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.05/RedUtilsRemastered_v1.05.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.06/RedUtilsRemastered_v1.06.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.065/RedUtilsRemastered_v1.065.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.0675/RedUtilsRemastered_v1.0675.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.07/RedUtilsRemastered-1.07v.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.07/RedUtilsRemastered-1.07v_java8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/1.08/RedUtilsRemastered-1.08v_java8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Fractal_Thing/Fractal Thing.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/NO_PROBLEM...wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/Toriel_yaara.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/GraphicsApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/GraphicsApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/RedUtilsRemastered.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/RedUtilsRemastered.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/audio/AudioManager$Ogg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/audio/AudioManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/audio/AudioManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/audio/OggClip$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/audio/OggClip$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/audio/OggClip$InternalException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/audio/OggClip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/audio/OggClip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/console/ConsoleMSG.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/display/GraphicsDisplay$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/display/GraphicsDisplay$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/display/GraphicsDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/gfx/Texture$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/gfx/Texture$Logger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/gfx/Texture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/input/InputManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/input/KeyInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/input/MouseInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/util/thread/ThreadPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RedUtilsRemastered/com/redsponge/redutils/util/thread/ThreadPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemastered/yay.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemasteredTester/com/redsponge/redutilstester/Launcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemasteredTester/com/redsponge/redutilstester/TestFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RedUtilsRemasteredTester/jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe2/com/redsponge/tictactoe2/TicTacToe2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/redutils/GraphicsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redsponge/redutils/GraphicsApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/redutils/RedUtilsRemastered.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/redutils/audio/WaveClip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redsponge/redutils/audio/WaveClip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/redsponge/redutils/gfx/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redsponge/redutils/gfx/Texture.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -95,45 +36,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/version">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="-1186" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Texture.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/gfx/Texture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changelog" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/changelog">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaveClip.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WaveClip.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/audio/WaveClip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+            <state relative-caret-position="195">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1111#1112#0" expanded="true" />
                 <element signature="e#1132#1133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VersionTracker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/version/VersionTracker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,7 +112,6 @@
         <option value="$PROJECT_DIR$/src/com/redsponge/redutils/input/KeyInput.java" />
         <option value="$PROJECT_DIR$/src/com/redsponge/redutils/input/MouseInput.java" />
         <option value="$PROJECT_DIR$/src/com/redsponge/redutils/IntervalTimer.java" />
-        <option value="$PROJECT_DIR$/src/com/redsponge/redutils/gfx/Texture.java" />
         <option value="$PROJECT_DIR$/src/com/redsponge/redutils/input/InputManager.java" />
         <option value="$PROJECT_DIR$/src/com/redsponge/redutils/display/GraphicsDisplay.java" />
         <option value="$PROJECT_DIR$/../RedUtilsRemasteredTester/src/com/redsponge/redutilstester/TestFrame.java" />
@@ -211,6 +137,7 @@
         <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/src/com/redsponge/redutils/audio/WaveClip.java" />
         <option value="$PROJECT_DIR$/changelog" />
+        <option value="$PROJECT_DIR$/src/com/redsponge/redutils/gfx/Texture.java" />
       </list>
     </option>
   </component>
@@ -240,6 +167,11 @@
             <path>
               <item name="RedUtilsRemastered" type="b2602c69:ProjectViewProjectNode" />
               <item name="RedUtilsRemastered" type="462c0819:PsiDirectoryNode" />
+              <item name="builds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RedUtilsRemastered" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RedUtilsRemastered" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -255,6 +187,13 @@
               <item name="redutils" type="462c0819:PsiDirectoryNode" />
               <item name="audio" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RedUtilsRemastered" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RedUtilsRemastered" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="redutils" type="462c0819:PsiDirectoryNode" />
+              <item name="gfx" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -264,8 +203,8 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/EranDesk/Turn Off/Code/Workspaces/Java/RedUtilsRemastered/src/com/redsponge/redutils/GraphicsApp.java" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/builds/1.11" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
@@ -411,11 +350,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3284055" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.3284055" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -556,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/gfx/Texture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="62" column="36" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../TicTacToe2/src/com/redsponge/tictactoe2/TicTacToe2.java" />
     <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/exceptions/NotEnoughThreadsPresentException.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -696,17 +627,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/audio/IAudioClip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/util/array/DelayModifiableArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
+            <element signature="e#1924#1925#0" expanded="true" />
+            <element signature="e#1976#1977#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2101#2102#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+            <element signature="e#2484#2485#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#2254#2255#0" expanded="true" />
+            <element signature="e#2309#2310#0" expanded="true" />
+            <element signature="e#2330#2331#0" expanded="true" />
+            <element signature="e#2731#2732#0" expanded="true" />
+            <element signature="e#2769#2770#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+            <element signature="e#2504#2505#0" expanded="true" />
+            <element signature="e#2964#2965#0" expanded="true" />
+            <element signature="e#2992#2993#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -717,13 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/audio/OggClip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -751,19 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/GraphicsApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/version">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -771,14 +724,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/audio/WaveClip.java">
+    <entry file="file://$PROJECT_DIR$/changelog">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/audio/OggClip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -793,10 +751,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changelog">
+    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/GraphicsApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1186" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/audio/IAudioClip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/gfx/Texture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redsponge/redutils/audio/WaveClip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -806,11 +798,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>RedUtilsRemastered-1.08v_java8</last-edited>
+          <last-edited>RedUtilsRemastered_1.11_java8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

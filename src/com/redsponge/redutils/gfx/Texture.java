@@ -71,11 +71,6 @@ public class Texture {
         g.setTransform(transform);
         render(g, x, y, centered);
         g.setTransform(backup);
-
-//        String s = "hellox";
-//        StringBuilder b = new StringBuilder(s);
-//        b.setCharAt(5, '!');
-//        s = b.toString();
     }
 
 
