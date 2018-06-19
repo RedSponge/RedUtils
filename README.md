@@ -110,7 +110,7 @@ To render a texture, use the `Texture.render(...)` method, there are many variat
 ### Audio (Version 1.07 and up)
 To get audio objects, use the  `AudioManager` class to retrieve `IAudioClip` instances.
 
-`IAudioClip` instances have methods such as `play()`, `stop()`, `pause()` and 'loop()'.
+`IAudioClip` instances have methods such as `play()`, `stop()`, `pause()` and `loop()`.
 
 #### Supported Formats:
 * Ogg - `AudioManager.Ogg.getClip(String path)` (Since: **1.07**)
