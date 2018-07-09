@@ -9,6 +9,7 @@ public class IntervalTimer implements Runnable {
     private boolean running;
 
     private boolean printFPS;
+    private long lastFPS;
     private String id;
 
     public IntervalTimer(Runnable toRun, ThreadPool pool, int timesPerSecond, boolean printFPS, String timerId) {
@@ -51,6 +52,7 @@ public class IntervalTimer implements Runnable {
                 if(printFPS) {
                     ConsoleMSG.INFO.info("FPS on task [" + id + "] is:" + ticks + ". [nano: " + timer + "]");
                 }
+                lastFPS = ticks;
                 ticks = 0;
                 timer = 0;
             }

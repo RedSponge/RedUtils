@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class VersionTracker {
 
-    private static final String VERSION = "1.11";
+    private static final String VERSION = "1.115";
 
     public static String fetchLatestVersion() {
         try {

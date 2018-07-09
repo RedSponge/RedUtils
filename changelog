@@ -1,3 +1,6 @@
+9/7/2018 1.115:
+ - Added lastFPS in IntervalTimer (private to to get access use reflection)
+
 19/6/2018 1.11:
  - Added .wav support! (check README.md for how to use)
  - Moved builds from out to builds
