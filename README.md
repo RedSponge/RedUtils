@@ -16,12 +16,12 @@ and add it as a library/dependency to your project.
 
 After you did that, your main class needs to extend `GraphicsApp`
 
-```
+```java
 public class Example extends GraphicsApp
 ```
 
 You will need to implement three methods: `init`, `tick` and `render` as well as a constructor:
-```
+```java
 GraphicsApp(String title, int screen_width, int screen_height, int ticksPerSecond, int framesPerSecond)
 ```
 A more complicated version of the constructor contains also `boolean printTPS, boolean printFPS, int numThreads`
@@ -29,7 +29,7 @@ A more complicated version of the constructor contains also `boolean printTPS, b
 **IMPORTANT:** The method `start()` must be called at the end of the constructor or the app won't run
 
 In the end, you should have a class that looks like this:
-```
+```java
 public class ExampleApp extends GraphicsApp {
   public Example() {
     super("An example app", 640, 480, 60, 60)  
@@ -54,7 +54,7 @@ public class ExampleApp extends GraphicsApp {
 ```
 
 In your main method, just create a new instance of the main class.
-```
+```java
 public static void main(String[] args) {
   new Example();
 }
@@ -63,7 +63,7 @@ public static void main(String[] args) {
 ### Main Class Instances (Version 1.10 and up)
 
 To create an instance of the class all you need to do is add a public static field of your class with the `@Instance` annotation above it.
-```
+```java
 @Instance
 public static ExampleApp INSTANCE;
 ```
@@ -92,7 +92,7 @@ To get the inputManager outside of the main class, use the `GraphicsApp.getInput
 
 ### Rendering and the Graphics2D Object
 To render, use the `Graphics2D g` field which is a protected field in the `GraphicsApp` class, and can be used freely:
-```
+```java
 @Override
 public void render() {
   g.drawRect(100, 100, 200, 200);
@@ -105,14 +105,13 @@ public void render() {
 #### Internal (Version 1.09 and up)
 Using the `Texture.load(String path)` method you can load internal textures (from a res folder for example). if you're using png, you can type the name without the ".png" extension, otherwise, add the extension in the path.
 
-###### To create a res(ources) folder:
+##### To create a res(ources) folder:
 
 1. Right click the project icon
 2. New > Folder/Directory
 3. Call it something like `resources` or `res`
+4. **Eclipse**: Right click the folder, Build Path > Use as Source Folder
 
-4. 
-**Eclipse**: Right click the folder, Build Path > Use as Source Folder
 **Intellij**: Right click the folder, Mark directory as > Sources Root
 
 The folder should now look like the `src` folder and can now contain images for the `Texture.load()` method
