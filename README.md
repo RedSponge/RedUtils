@@ -109,12 +109,12 @@ Using the `Texture.load(String path)` method you can load internal textures (fro
 
 1. Right click the project icon
 2. New > Folder/Directory
-3. Call it something like `resources` or `res`
+3. Call it something like `resources` or `res` (or anything else you'd like to call it)
 4. **Eclipse**: Right click the folder, Build Path > Use as Source Folder
 
 **Intellij**: Right click the folder, Mark directory as > Sources Root
 
-The folder should now look like the `src` folder and can now contain images for the `Texture.load()` method
+The folder should now look like the `src` folder and can now contain images and audio for internal loading
 
 #### External
 Not implemented yet.
