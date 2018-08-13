@@ -10,8 +10,7 @@ As of now the library supports:
 * Multithreading
 
 ### Getting started
-First thing to do is download the RedUtilsRemastered jar file (latest version is 1.09)
-[You can download it here!](https://github.com/RedSponge/RedUtilsRemastered/blob/master/out/1.09/RedUtilsRemastered-1.09v_java8.jar?raw=true)
+First thing to do is download the RedUtilsRemastered jar file (check releases for download or just go to the builds folder)
 
 and add it as a library/dependency to your project.
 
@@ -55,6 +54,11 @@ public class ExampleApp extends GraphicsApp {
 ```
 
 In your main method, just create a new instance of the main class.
+```
+public static void main(String[] args) {
+  new Example();
+}
+```
 
 ### Main Class Instances (Version 1.10 and up)
 
@@ -69,20 +73,20 @@ Its value will be injected using reflection during the initiation sequence.
 
 Every `GraphicsApp` instance has a protected `InputManager` field that is registered to its frame, the input manager has the following methods:
 
-*  registerToDisplay(GraphicsDisplay display) - Adds the mouse and key listeners to the display, automatically done by GraphicsApp
+*  `registerToDisplay(GraphicsDisplay display)` - Adds the mouse and key listeners to the display, automatically done by GraphicsApp
   
-*  isKeyHeld(int key) - returns true as long as the key is pressed\held
-*  isKeyJustPressed(int key) - returns true for the first tick the key is held
-*  isKeyReleased(int key) - returns true as long as the key is not pressed\held
-*  isKeyJustReleased(int key) - returns true for the first tick after the key has been released
+*  `isKeyHeld(int key)` - returns true as long as the key is pressed\held
+*  `isKeyJustPressed(int key)` - returns true for the first tick the key is held
+*  `isKeyReleased(int key)` - returns true as long as the key is not pressed\held
+*  `isKeyJustReleased(int key)` - returns true for the first tick after the key has been released
   
-*  isMouseButtonHeld(int button) - returns true as long as the button is pressed\held
-*  isMouseButtonJustPressed(int button) - returns true for the first tick the button is held
-*  isMouseButtonReleased(int button) - returns true as long as the button is not pressed\held
-*  isMouseButtonJustReleased(int button) returns true for the first tick after the button has been released
+*  `isMouseButtonHeld(int button)` - returns true as long as the button is pressed\held
+*  `isMouseButtonJustPressed(int button)` - returns true for the first tick the button is held
+*  `isMouseButtonReleased(int button)` - returns true as long as the button is not pressed\held
+*  `isMouseButtonJustReleased(int button)` returns true for the first tick after the button has been released
   
-*  getMouseX() - returns current mouse X position
-*  getMouseY() - returns current mouse Y position
+*  `getMouseX()` - returns current mouse X position
+*  `getMouseY()` - returns current mouse Y position
 
 To get the inputManager outside of the main class, use the `GraphicsApp.getInputManager()` on an instance of your class
 
@@ -98,13 +102,25 @@ public void render() {
 
 ### Textures
 
-###### Internal (Version 1.09 and up)
+#### Internal (Version 1.09 and up)
 Using the `Texture.load(String path)` method you can load internal textures (from a res folder for example). if you're using png, you can type the name without the ".png" extension, otherwise, add the extension in the path.
 
-###### External
+###### To create a res(ources) folder:
+
+1. Right click the project icon
+2. New > Folder/Directory
+3. Call it something like `resources` or `res`
+
+4. 
+**Eclipse**: Right click the folder, Build Path > Use as Source Folder
+**Intellij**: Right click the folder, Mark directory as > Sources Root
+
+The folder should now look like the `src` folder and can now contain images for the `Texture.load()` method
+
+#### External
 Not implemented yet.
 
-###### Rendering
+#### Rendering
 To render a texture, use the `Texture.render(...)` method, there are many variations of it so choose what suits you. all of them request the `Graphics2D g` object and the x and y coordinates.
 
 ### Audio (Version 1.07 and up)
